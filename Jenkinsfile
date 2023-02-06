@@ -3,7 +3,7 @@
 pipeline {
     agent {label 'slave'}
     stages {
-        stage ("Docker Pull Dastardly from Burp Suite container image") {
+        stage ("Docker Pulli Dastardly from Burp Suite container image") {
             steps {
                 sh 'docker pull public.ecr.aws/portswigger/dastardly:latest'
             }
