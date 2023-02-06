@@ -1,7 +1,7 @@
 // Jenkinsfile (Declarative Pipeline) for integration of Dastardly, from Burp Suite.
 
 pipeline {
-    agent any
+    agent {label 'slave'}
     stages {
         stage ("Docker Pull Dastardly from Burp Suite container image") {
             steps {
